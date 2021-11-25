@@ -7,8 +7,8 @@ final class ViewController: UIViewController {
 
     @IBAction private func calculateButtonTapped(_ sender: Any) {
         guard let num1 = Double(countTextField1.text!) else {
-          alert(message: "割られる数を入力して下さい")
-         return
+            alert(message: "割られる数を入力して下さい")
+            return
         }
 
         guard let num2 = Double(countTextField2.text!) else {
@@ -20,8 +20,8 @@ final class ViewController: UIViewController {
             alert(message: "割る数に0を入力しないでください")
             return
         }
-          let calculated = num1 / num2
-          resultLabel.text = String(calculated)
+        let calculatedNum = num1 / num2
+        resultLabel.text = String(calculatedNum)
     }
 
     private func alert(message: String) {
